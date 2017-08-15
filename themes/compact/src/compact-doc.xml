@@ -75,15 +75,13 @@
       {{{wpml RAW.info.brief }}}
 <wx:sub-section>
 
-{{! A simple resume heading. }}
-<w:p wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA" wsp:rsidRDefault="00C146CA"
-	wsp:rsidP="00C146CA">
-                <w:keepNext />
-    <w:pStyle w:val="Heading1" />
+
+<w:p wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
+  <w:pPr>
+    <w:pStyle w:val="Heading1"/>
+  </w:pPr>
   <w:r wsp:rsidRPr="00C146CA">
-  
-                <w:keepNext />
-    <w:t>{{{sectionTitle EMPLOYMENT}}}</w:t>
+    <w:t>EMPLOYMENT</w:t>
   </w:r>
 </w:p>
 
