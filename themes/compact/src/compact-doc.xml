@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?mso-application progid="Word.Document"?>
-<w:wordDocument xmlns:aml="http://schemas.microsoft.com/aml/2001/core"
+<?mso-application progid="Word.Document"?><w:wordDocument xmlns:aml="http://schemas.microsoft.com/aml/2001/core"
 	xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas"
 	xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml"
@@ -21,173 +20,199 @@
   <w:body>
     <wx:sect>
 
-      <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA"
-	wsp:rsidRDefault="007D096C" wsp:rsidP="00C146CA">
-        <w:pPr>
+    <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA" wsp:rsidRDefault="007D096C" wsp:rsidP="00C146CA">
+      <w:pPr>
           <w:pStyle w:val="Title" />
           <w:tabs>
-            <w:tab w:val="right" w:pos="9360" />
+              <w:tab w:val="right" w:pos="9360" />
           </w:tabs>
-        </w:pPr>
-        <w:r>
+      </w:pPr>
+      <w:r>
           <w:t>{{{ r.name }}}</w:t>
-        </w:r>
-        <w:r>
+      </w:r>
+      <w:r>
           <w:tab />
-        </w:r>
-        <w:hlink w:dest="mailto:{{{ r.contact.email }}}">
+      </w:r>
+      <w:hlink w:dest="mailto:{{{ r.contact.email }}}">
           <w:r wsp:rsidRPr="003876BF">
-            <w:rPr>
-              <w:rStyle w:val="Hyperlink" />
-              <w:sz-cs w:val="20" />
-            </w:rPr>
-            <w:t>{{{ r.contact.email }}}</w:t>
+              <w:rPr>
+                  <w:rStyle w:val="Hyperlink" />
+                  <w:sz-cs w:val="20" />
+              </w:rPr>
+              <w:t>{{{ r.contact.email }}}</w:t>
           </w:r>
-        </w:hlink>
-        <w:r>
+      </w:hlink>
+      <w:r>
           <w:rPr>
-            <w:sz-cs w:val="20" />
+              <w:sz-cs w:val="20" />
           </w:rPr>
           <w:t> - </w:t>
-        </w:r>
-        <w:r wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0">
+      </w:r>
+      <w:r wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0">
           <w:rPr>
-            <w:sz-cs w:val="20" />
+              <w:sz-cs w:val="20" />
           </w:rPr>
           <w:t>{{{ r.contact.phone }}}</w:t>
-        </w:r>
-        <w:r>
+      </w:r>
+      <w:r>
           <w:rPr>
-            <w:sz-cs w:val="20" />
+              <w:sz-cs w:val="20" />
           </w:rPr>
           <w:t> - </w:t>
-        </w:r>
-        <w:hlink w:dest="{{{ r.contact.website }}}">
+      </w:r>
+      <w:hlink w:dest="{{{ r.contact.website }}}">
           <w:r wsp:rsidRPr="003876BF">
-            <w:rPr>
-              <w:rStyle w:val="Hyperlink" />
-              <w:sz-cs w:val="20" />
-            </w:rPr>
-            <w:t>{{trimURL r.contact.website }}</w:t>
+              <w:rPr>
+                  <w:rStyle w:val="Hyperlink" />
+                  <w:sz-cs w:val="20" />
+              </w:rPr>
+              <w:t>{{trimURL r.contact.website }}</w:t>
           </w:r>
-        </w:hlink>
-      </w:p>
-      {{{wpml RAW.info.brief }}}
-<wx:sub-section>
+      </w:hlink>
+  </w:p>
 
-
-<w:p wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
-  <w:pPr>
-    <w:pStyle w:val="Heading1"/>
-  </w:pPr>
-  <w:r wsp:rsidRPr="00C146CA">
-    <w:t>EMPLOYMENT</w:t>
-  </w:r>
-</w:p>
-
-  {{#each r.employment.history}}
+  {{{wpml RAW.info.brief }}}
   <wx:sub-section>
-      <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA"
-	wsp:rsidRDefault="00606071" wsp:rsidP="00E578D4">
-      <w:pPr>
-                <w:keepNext />
-        <w:pStyle w:val="Heading2" />
-        <w:tabs>
-          <w:tab w:val="right" w:pos="9360" />
-        </w:tabs>
-      </w:pPr>
-      <w:r wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA">
-        <w:t>{{ position }}, </w:t>
-      </w:r>
-      {{#if url}}<w:hlink w:dest="{{{ url }}}">{{/if}}
-        <w:r wsp:rsidR="009452CA" wsp:rsidRPr="00606071">
-          {{#if url}}
-          <w:rPr>
-                <w:keepNext />
-            <w:rStyle w:val="Hyperlink" />
-          </w:rPr>
-          {{/if}}
-          <w:t>{{ employer }}</w:t>
-        </w:r>
-      {{#if url}}</w:hlink>{{/if}}
-      <w:r wsp:rsidR="00EA0B64">
-        <w:tab />
-      </w:r>
-      <w:r wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA">
-        <w:rPr>
-                <w:keepNext />
-          <w:rStyle w:val="FromTo" />
-        </w:rPr>
-        <w:t>{{dateRange . 'MMM YYYY'}}</w:t>
-      </w:r>
-    </w:p>
-    <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0"
-	wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
-      <w:pPr>
-                <w:keepNext />
-        <w:rPr>
-          <w:sz-cs w:val="20" />
-        </w:rPr>
-      </w:pPr>
-      {{{wpml summary true}}}
-    </w:p>
-
-    {{#each highlights }}
-    <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA"
-	wsp:rsidP="00C146CA">
-      <w:pPr>
-                <w:keepNext />
-        <w:pStyle w:val="ListParagraph" />
-        <w:listPr>
-          <w:ilvl w:val="0" />
-          <w:ilfo w:val="1" />
-          <wx:t wx:val="•" />
-          <wx:font wx:val="Calibri" />
-        </w:listPr>
-        <w:rPr>
-          <w:sz-cs w:val="20" />
-        </w:rPr>
-      </w:pPr>
-      {{{wpml this true}}}
-
-    </w:p>
-    {{/each}}
-
+      <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
+          <w:pPr>
+              <w:pStyle w:val="Heading1" />
+          </w:pPr>
+          <w:r wsp:rsidRPr="00C146CA">
+              <w:t>EMPLOYMENT</w:t>
+          </w:r>
+      </w:p>
+      {{#each r.employment.history}}
+      <wx:sub-section>
+          <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA" wsp:rsidRDefault="00606071" wsp:rsidP="00E578D4">
+              <w:pPr>
+                  <w:keepNext />
+                  <w:pStyle w:val="Heading2" />
+                  <w:tabs>
+                      <w:tab w:val="right" w:pos="9360" />
+                  </w:tabs>
+              </w:pPr>
+              <w:r wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA">
+                  <w:t>{{ position }}, </w:t>
+              </w:r>
+              {{#if url}}
+              <w:hlink w:dest="{{{ url }}}">{{/if}}
+                  <w:r wsp:rsidR="009452CA" wsp:rsidRPr="00606071">
+                      {{#if url}}
+                      <w:rPr>
+                          <w:keepNext />
+                          <w:rStyle w:val="Hyperlink" />
+                      </w:rPr>
+                      {{/if}}
+                      <w:t>{{ employer }}</w:t>
+                  </w:r>
+                  {{#if url}}</w:hlink>{{/if}}
+              <w:r wsp:rsidR="00EA0B64">
+                  <w:tab />
+              </w:r>
+              <w:r wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA">
+                  <w:rPr>
+                      <w:keepNext />
+                      <w:rStyle w:val="FromTo" />
+                  </w:rPr>
+                  <w:t>{{dateRange . 'MMM YYYY'}}</w:t>
+              </w:r>
+          </w:p>
+          <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
+              <w:pPr>
+                  <w:keepNext />
+                  <w:rPr>
+                      <w:sz-cs w:val="20" />
+                  </w:rPr>
+              </w:pPr>
+              {{{wpml summary true}}}
+          </w:p>
+          {{#each highlights }}
+          <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
+              <w:pPr>
+                  <w:keepNext />
+                  <w:pStyle w:val="ListParagraph" />
+                  <w:listPr>
+                      <w:ilvl w:val="0" />
+                      <w:ilfo w:val="1" />
+                      <wx:t wx:val="•" />
+                      <wx:font wx:val="Calibri" />
+                  </w:listPr>
+                  <w:rPr>
+                      <w:sz-cs w:val="20" />
+                  </w:rPr>
+              </w:pPr>
+              {{{wpml this true}}}
+          </w:p>
+          {{/each}}
+      </wx:sub-section>
+      <!--<w:p><w:pPr><w:sectPr>
+    <w:type w:val=”continuous”/>
+    </w:sectPr>
+    </w:pPr>
+    </w:p>-->
+      <w:p>
+          <w:r>
+              <w:lastRenderedPageBreak />
+          </w:r>
+      </w:p>
+      {{/each}}
   </wx:sub-section>
-<!--<w:p><w:pPr><w:sectPr>
-  <w:type w:val=”continuous”/>
-  </w:sectPr>
-  </w:pPr>
-  </w:p>-->
-  <w:p>
-  <w:r>
-    <w:lastRenderedPageBreak />
-    </w:r>
-</w:p>
-  {{/each}}
 
-</wx:sub-section>
+  {{#section "projects"}}{{> section/projects }}{{/section}}
+  {{#section "governance"}}{{> section/governance }}{{/section}}
+  {{#section "affiliation"}}{{> section/affiliation }}{{/section}}
+  {{#section "education"}}{{> section/education }}{{/section}}
+  {{#section "skills"}}{{> skills }}{{/section}}
 
-      {{#section "projects"}}{{> section/projects }}{{/section}}
-      {{#section "governance"}}{{> section/governance }}{{/section}}
-      {{#section "affiliation"}}{{> section/affiliation }}{{/section}}
-      {{#section "education"}}{{> section/education }}{{/section}}
-      {{#section "skills"}}{{> skills }}{{/section}}
-
-      {{#section "service"}}{{> section/service }}{{/section}}
-      {{#section "writing"}}{{> section/writing }}{{/section}}
-      {{#section "speaking"}}{{> section/speaking }}{{/section}}
-      {{#section "reading"}}{{> section/reading }}{{/section}}
-      {{#section "recognition"}}{{> section/recognition }}{{/section}}
-      {{#section "references"}}{{> section/references }}{{/section}}
-      {{#section "interests"}}{{> section/interests }}{{/section}}
-      <w:sectPr wsp:rsidR="00B43FDC" wsp:rsidRPr="000A3AF0"
-	wsp:rsidSect="001B7422">
-        <w:pgSz w:w="12240" w:h="15840" />
-        <w:pgMar w:top="1440" w:right="1440" w:bottom="1440"
-	w:left="1440" w:header="720" w:footer="720" w:gutter="0" />
-        <w:cols w:space="720" />
-        <w:docGrid w:line-pitch="360" />
+  {{#section "service"}}{{> section/service }}{{/section}}
+  {{#section "writing"}}{{> section/writing }}{{/section}}
+  {{#section "speaking"}}{{> section/speaking }}{{/section}}
+  {{#section "reading"}}{{> section/reading }}{{/section}}
+  {{#section "recognition"}}{{> section/recognition }}{{/section}}
+  {{#section "references"}}{{> section/references }}{{/section}}
+      <wx:sub-section> {{#> header-interests }}
+      <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
+          <w:pPr>
+              <w:keepNext/>
+              <w:pStyle w:val="Heading1" />
+          </w:pPr>
+          <w:r wsp:rsidRPr="00C146CA">
+              <w:t>INTERESTS</w:t>
+          </w:r>
+      </w:p>
+      {{/header-interests}}
+      <wx:sub-section>
+          {{#each r.interests}}
+          <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA" wsp:rsidRDefault="00606071" wsp:rsidP="00E578D4">
+              <w:pPr>
+                  <w:keepNext />
+                  <w:pStyle w:val="Heading2" />
+                  <w:tabs>
+                      <w:tab w:val="right" w:pos="9360" />
+                  </w:tabs>
+              </w:pPr>
+              <w:r wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA">
+                  <w:t>{{{ name }}}</w:t>
+              </w:r>
+              {{#if keywords}}
+              <w:r wsp:rsidR="00EA0B64">
+                  <w:keepNext />
+                  <w:tab/>
+              </w:r>
+              <w:r wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA">
+                  <w:keepNext />
+                  <w:t>{{#each keywords}}{{#unless @first}}, {{/unless}}{{{ . }}}{{/each}}</w:t>
+              </w:r>
+              {{/if}}
+          </w:p>
+          {{/each}}
+      </wx:sub-section>
+      </wx:sub-section>
+      <w:sectPr wsp:rsidR="00B43FDC" wsp:rsidRPr="000A3AF0" wsp:rsidSect="001B7422">
+          <w:pgSz w:w="12240" w:h="15840" />
+          <w:pgMar w:top="1440" w:right="1440" w:bottom="1440" w:left="1440" w:header="720" w:footer="720" w:gutter="0" />
+          <w:cols w:space="720" />
+          <w:docGrid w:line-pitch="360" />
       </w:sectPr>
     </wx:sect>
   </w:body>
